@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "android": "react-native run-android",
-        "android:release": "cd android/ && ./gradlew assembleDevRelease && cd ..",
+        "android:release": "cd android/ && ./gradlew clean && ./gradlew assembleDevRelease && cd ..",
         "ios": "react-native run-ios",
         "ios:14": "npx react-native run-ios --simulator='iPhone 14 Pro Max'",
         "ios:13": "npx react-native run-ios --simulator='iPhone 13'",
