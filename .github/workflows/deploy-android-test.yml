@@ -5,11 +5,6 @@ on:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+([0-9]+)'
   workflow_dispatch:
-    inputs:
-      version:
-        description: Bump Version
-        default: v1.0.0
-        required: true
     
 env:
   APP_CENTER_TOKEN: $  
