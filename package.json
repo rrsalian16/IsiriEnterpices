@@ -4,7 +4,7 @@
     "private": true,
     "url": "git+https://github.com/rrsalian16/IsiriEnterpices.git",
     "scripts": {
-        "np": "np --no-publish --message 'build: bump version to v%s'",
+        "np": "np --no-publish --message 'build: bump to v%s'",
         "postversion": "react-native-version",
         "android": "react-native run-android",
         "clean:android": "cd android && ./gradlew cleanBuildCache && ./gradlew clean && cd ..",
