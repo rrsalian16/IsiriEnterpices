@@ -4,8 +4,8 @@
     "private": true,
     "url": "git+https://github.com/rrsalian16/IsiriEnterpices.git",
     "scripts": {
-        "np": "np --no-publish --message 'build: bump to v%s'",
-        "postversion": "react-native-version",
+        "upgrade-version": "np --no-publish --message 'build: bump to v%s'",
+        "postversion": "react-native-version --never-amend",
         "android": "react-native run-android",
         "clean:android": "cd android && ./gradlew cleanBuildCache && ./gradlew clean && cd ..",
         "clean:ios": "rm -rf ios/build",
@@ -25,7 +25,8 @@
     },
     "dependencies": {
         "react": "18.1.0",
-        "react-native": "0.70.6"
+        "react-native": "0.70.6",
+        "react-native-config": "^1.4.12"
     },
     "devDependencies": {
         "@babel/core": "^7.12.9",
