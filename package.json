@@ -75,6 +75,7 @@
         ]
     },
     "lint-staged": {
+        "**/*.ts": "tsc-files --noEmit",
         "*.+(js|jsx|ts|tsx)": [
             "eslint --cache --fix",
             "yarn lint:fix",
