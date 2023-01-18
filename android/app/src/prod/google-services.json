@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1094679775015",
+    "project_id": "isirienterprises-uat",
+    "storage_bucket": "isirienterprises-uat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094679775015:android:d531e70182f361840bcb02",
+        "android_client_info": {
+          "package_name": "com.isirienterprises.naravi.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094679775015-q3mk50ksl7d791tdaamk45dsqkj560co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYgnVlu4L7mQ0mhZkfIZrM6dEef_FsNS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094679775015-q3mk50ksl7d791tdaamk45dsqkj560co.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1094679775015-iv7rdi9ej154m0jf9q1celfaggdmuhop.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.isirienterprises.naravi.uat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
