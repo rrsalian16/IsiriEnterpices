@@ -6,7 +6,7 @@ install! 'cocoapods', :deterministic_uuids => false
 $RNFirebaseAsStaticFramework = true
 
 
-target 'IsiriEnterprises' do
+abstract_target 'IsiriEnterprisesCommonPods' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -32,6 +32,12 @@ target 'IsiriEnterprises' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+
+  target 'IsiriEnterprisesUat' do
+  end
+
+  target 'IsiriEnterprisesProd' do
+  end
 
   target 'IsiriEnterprisesTests' do
     inherit! :complete
