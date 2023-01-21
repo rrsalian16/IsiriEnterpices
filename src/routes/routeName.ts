@@ -1,4 +1,4 @@
-export const RouetName = {
-    HOME: 'HOME',
-    DETAILS: 'DETAILS',
-} as const;
+export enum RouetName {
+    HOME = 'HOME',
+    DETAILS = 'DETAILS',
+}

@@ -2,15 +2,11 @@ import React from 'react';
 import {Button, Text, View} from 'react-native';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {
-    DetailsScreenNavProps,
-    HomeScreenNavProps,
-    RootStackParamList,
-} from '@Isiri/routes/types';
-import {RouetName} from '@Isiri/routes';
+
+import {RouetName, RouteTypes} from '@Isiri/routes';
 
 function HomeScreen() {
-    const navigation: HomeScreenNavProps = useNavigation();
+    const navigation: RouteTypes.HomeScreenNavProps = useNavigation();
     return (
         <View
             style={{
@@ -21,13 +17,15 @@ function HomeScreen() {
             <Text>Home Screen</Text>
             <Button
                 title='Go to Details'
-                onPress={() => navigation.navigate(RouetName.HOME)}
+                onPress={() => navigation.navigate(RouetName.DETAILS)}
             />
         </View>
     );
 }
 
-function DetailsScreen({navigation}: {navigation: DetailsScreenNavProps}) {
+type DetailsScreenProps = {navigation: RouteTypes.DetailsScreenNavProps};
+
+function DetailsScreen({navigation}: DetailsScreenProps) {
     return (
         <View
             style={{
@@ -44,7 +42,7 @@ function DetailsScreen({navigation}: {navigation: DetailsScreenNavProps}) {
     );
 }
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<RouteTypes.RootStackParamList>();
 
 const Setup = () => {
     return (

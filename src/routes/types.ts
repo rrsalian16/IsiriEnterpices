@@ -1,16 +1,17 @@
+import {RouetName} from '@Isiri/routes';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
-    HOME: undefined;
-    DETAILS: undefined;
+    [RouetName.HOME]: undefined;
+    [RouetName.DETAILS]: undefined;
 };
 
 export type HomeScreenNavProps = NativeStackNavigationProp<
     RootStackParamList,
-    'HOME'
+    RouetName.HOME
 >;
 
 export type DetailsScreenNavProps = NativeStackNavigationProp<
     RootStackParamList,
-    'DETAILS'
+    RouetName.DETAILS
 >;
