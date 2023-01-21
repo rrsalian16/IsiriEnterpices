@@ -43,6 +43,6 @@
         },
         "react": {
             "version": "detect"
-          }
+        }
     }
 }

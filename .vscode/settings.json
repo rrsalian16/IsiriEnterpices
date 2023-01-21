@@ -7,6 +7,8 @@
     "editor.inlayHints.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
+    "typescript.format.enable": true,
+    "typescript.validate.enable": true,
     "editor.showUnused": true,
     "prettier.singleQuote": true,
     "editor.codeActionsOnSave": {
