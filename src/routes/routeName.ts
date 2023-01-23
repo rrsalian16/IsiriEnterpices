@@ -1,4 +1,4 @@
-export enum RouetName {
+export enum RouteName {
     HOME_TAB = 'HOME_TAB',
     HOME = 'HOME',
     DETAILS = 'DETAILS',

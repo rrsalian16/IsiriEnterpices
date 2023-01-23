@@ -1,7 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import {RouetName, RouteTypes} from '.';
+import {RouteName, RouteTypes} from '.';
 import HomeStack from './homeStack';
 import SettingStack from './settingStack';
 
@@ -11,13 +11,13 @@ const {Screen, Navigator} =
 const BottomTabStack = () => {
     return (
         <Navigator
-            initialRouteName={RouetName.HOME_TAB}
+            initialRouteName={RouteName.HOME_TAB}
             screenOptions={{
                 headerShown: false,
                 // tabBarActiveBackgroundColor: 'pink',
             }}>
-            <Screen name={RouetName.HOME_TAB} component={HomeStack} />
-            <Screen name={RouetName.SETTING_TAB} component={SettingStack} />
+            <Screen name={RouteName.HOME_TAB} component={HomeStack} />
+            <Screen name={RouteName.SETTING_TAB} component={SettingStack} />
         </Navigator>
     );
 };

@@ -3,7 +3,7 @@ import {Button, Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {RouetName, RouteTypes} from '@Isiri/routes';
+import {RouteName, RouteTypes} from '@Isiri/routes';
 
 function HomeScreen() {
     const navigation: RouteTypes.HomeScreenNavProps = useNavigation();
@@ -17,21 +17,21 @@ function HomeScreen() {
             <Text>Home Screen</Text>
             <Button
                 title='Go to Details'
-                onPress={() => navigation.navigate(RouetName.DETAILS)}
+                onPress={() => navigation.navigate(RouteName.DETAILS)}
             />
             <Button
                 title='Go to Settings'
                 onPress={() =>
-                    navigation.navigate(RouetName.SETTING_TAB, {
-                        screen: RouetName.SETTING,
+                    navigation.navigate(RouteName.SETTING_TAB, {
+                        screen: RouteName.SETTING,
                     })
                 }
             />
             <Button
                 title='Go to Profile'
                 onPress={() =>
-                    navigation.navigate(RouetName.SETTING_TAB, {
-                        screen: RouetName.PROFILE,
+                    navigation.navigate(RouteName.SETTING_TAB, {
+                        screen: RouteName.PROFILE,
                     })
                 }
             />
@@ -52,26 +52,26 @@ function DetailsScreen({navigation}: DetailsScreenProps) {
             <Text>Details Screen</Text>
             <Button
                 title='Go to Details... again'
-                onPress={() => navigation.navigate(RouetName.DETAILS)}
+                onPress={() => navigation.navigate(RouteName.DETAILS)}
             />
             <Button
                 title='Go to HOME'
-                onPress={() => navigation.navigate(RouetName.HOME)}
+                onPress={() => navigation.navigate(RouteName.HOME)}
             />
 
             <Button
                 title='Go to Settings'
                 onPress={() =>
-                    navigation.navigate(RouetName.SETTING_TAB, {
-                        screen: RouetName.SETTING,
+                    navigation.navigate(RouteName.SETTING_TAB, {
+                        screen: RouteName.SETTING,
                     })
                 }
             />
             <Button
                 title='Go to Profile'
                 onPress={() =>
-                    navigation.navigate(RouetName.SETTING_TAB, {
-                        screen: RouetName.PROFILE,
+                    navigation.navigate(RouteName.SETTING_TAB, {
+                        screen: RouteName.PROFILE,
                     })
                 }
             />
@@ -83,9 +83,9 @@ const Stack = createNativeStackNavigator<RouteTypes.HomeStackParamList>();
 
 const HomeStack = () => {
     return (
-        <Stack.Navigator initialRouteName={RouetName.HOME}>
-            <Stack.Screen name={RouetName.HOME} component={HomeScreen} />
-            <Stack.Screen name={RouetName.DETAILS} component={DetailsScreen} />
+        <Stack.Navigator initialRouteName={RouteName.HOME}>
+            <Stack.Screen name={RouteName.HOME} component={HomeScreen} />
+            <Stack.Screen name={RouteName.DETAILS} component={DetailsScreen} />
         </Stack.Navigator>
     );
 };

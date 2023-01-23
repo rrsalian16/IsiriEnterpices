@@ -3,7 +3,7 @@ import {View, Text, Button} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {RouetName, RouteTypes} from '@Isiri/routes';
+import {RouteName, RouteTypes} from '@Isiri/routes';
 
 function SettingScreen() {
     const navigation: RouteTypes.SettingScreenNavProps = useNavigation();
@@ -17,29 +17,29 @@ function SettingScreen() {
             <Text>Setting Screen</Text>
             <Button
                 title='Got to PROFILE'
-                onPress={() => navigation.navigate(RouetName.PROFILE)}
+                onPress={() => navigation.navigate(RouteName.PROFILE)}
             />
             <Button
                 title='Got to Home'
                 onPress={() =>
-                    navigation.navigate(RouetName.HOME_TAB, {
-                        screen: RouetName.HOME,
+                    navigation.navigate(RouteName.HOME_TAB, {
+                        screen: RouteName.HOME,
                     })
                 }
             />
             <Button
                 title='Got to HomeTab'
                 onPress={() =>
-                    navigation.navigate(RouetName.HOME_TAB, {
-                        screen: RouetName.HOME,
+                    navigation.navigate(RouteName.HOME_TAB, {
+                        screen: RouteName.HOME,
                     })
                 }
             />
             <Button
                 title='Got to Details'
                 onPress={() =>
-                    navigation.navigate(RouetName.HOME_TAB, {
-                        screen: RouetName.DETAILS,
+                    navigation.navigate(RouteName.HOME_TAB, {
+                        screen: RouteName.DETAILS,
                     })
                 }
             />
@@ -59,21 +59,21 @@ export function ProfileScreen() {
             <Text>Profile Screen</Text>
             <Button
                 title='Got to Settings'
-                onPress={() => navigation.navigate(RouetName.SETTING)}
+                onPress={() => navigation.navigate(RouteName.SETTING)}
             />
             <Button
                 title='Got to Home'
                 onPress={() =>
-                    navigation.navigate(RouetName.HOME_TAB, {
-                        screen: RouetName.HOME,
+                    navigation.navigate(RouteName.HOME_TAB, {
+                        screen: RouteName.HOME,
                     })
                 }
             />
             <Button
                 title='Got to Details'
                 onPress={() =>
-                    navigation.navigate(RouetName.HOME_TAB, {
-                        screen: RouetName.DETAILS,
+                    navigation.navigate(RouteName.HOME_TAB, {
+                        screen: RouteName.DETAILS,
                     })
                 }
             />
@@ -86,9 +86,9 @@ const Stack = createNativeStackNavigator<RouteTypes.SettingStackParamList>();
 
 const SettingStack = () => {
     return (
-        <Stack.Navigator initialRouteName={RouetName.SETTING}>
-            <Stack.Screen name={RouetName.SETTING} component={SettingScreen} />
-            <Stack.Screen name={RouetName.PROFILE} component={ProfileScreen} />
+        <Stack.Navigator initialRouteName={RouteName.SETTING}>
+            <Stack.Screen name={RouteName.SETTING} component={SettingScreen} />
+            <Stack.Screen name={RouteName.PROFILE} component={ProfileScreen} />
         </Stack.Navigator>
     );
 };

@@ -1,7 +1,8 @@
 import React from 'react';
 
-import {RouetName} from './routeName';
+import {RouteName} from './routeName';
 import * as RouteTypes from './types';
+import {NavigationService} from './navigationService';
 import BottomTabStack from './bottomTabStack';
 
 const AppNavigator = () => {
@@ -9,4 +10,4 @@ const AppNavigator = () => {
 };
 
 export default AppNavigator;
-export {RouetName, RouteTypes};
+export {RouteName, RouteTypes, NavigationService};
