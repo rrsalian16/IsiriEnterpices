@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+    // List of extensions which should be recommended for users of this workspace.
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "abusaidm.html-snippets",
+        "AlDuncanson.react-hooks-snippets",
+        "anseki.vscode-color",
+        "christian-kohler.path-intellisense",
+        "dbaeumer.vscode-eslint",
+        "dsznajder.es7-react-js-snippets",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "EQuimper.react-native-react-redux",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-complete-tag",
+        "formulahendry.auto-rename-tag",
+        "IronGeek.vscode-env",
+        "johnuphoff.vscode-styled-sort",
+        "mhutchie.git-graph",
+        "mikestead.dotenv",
+        "ms-vscode.sublime-keybindings",
+        "ms-vscode.vscode-typescript-next",
+        "msjsdiag.vscode-react-native",
+        "paulmolluzzo.convert-css-in-js",
+        "PKief.material-icon-theme",
+        "pnp.polacode",
+        "ricardo-emerson.create-react-tsx-component",
+        "ricardo-emerson.react-development-extensions-pack",
+        "shd101wyy.markdown-preview-enhanced",
+        "sleistner.vscode-fileutils",
+        "steoates.autoimport",
+        "stylelint.vscode-stylelint",
+        "wesbos.theme-cobalt2",
+        "xabikos.JavaScriptSnippets"
+    ],
+    // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+    "unwantedRecommendations": []
+}
