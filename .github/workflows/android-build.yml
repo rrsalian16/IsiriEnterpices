@@ -10,7 +10,7 @@ env:
     APP_CENTER_TOKEN: $
     APP_NAME: $MyApp-Android/ENV_TEST
     TESTING_GROUP: $ENV_TEST
-    UPLOAD_FILE: $android/app/build/outputs/apk/app-release.apk
+    UPLOAD_FILE: $android/app/build/outputs/apk/uat/app-release.apk
 
 jobs:
     build:
@@ -36,4 +36,4 @@ jobs:
               uses: actions/upload-artifact@v1
               with:
                   name: app-release.apk
-                  path: android/app/build/outputs/apk/release/
+                  path: android/app/build/outputs/apk/uat/release/
