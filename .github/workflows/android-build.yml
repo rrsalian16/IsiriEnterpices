@@ -30,7 +30,7 @@ jobs:
               run: yarn
 
             - name: Build android
-              run: yarn android:release
+              run: yarn android:uat:release
 
             - name: Upload Artifact
               uses: actions/upload-artifact@v1
